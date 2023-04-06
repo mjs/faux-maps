@@ -1,0 +1,6 @@
+- update README
+- remove test directory and support in Cargo.toml and package.json
+- measure wee-alloc
+- size to fit viewport
+- publish on site and blog
+- custom seed
