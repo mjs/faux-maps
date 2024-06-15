@@ -1,6 +1,6 @@
 {
   "author": "Menno Finlay-Smits <hello@menno.io>",
-  "name": "little-world",
+  "name": "faux-maps",
   "version": "0.1.0",
   "scripts": {
     "build": "rimraf dist pkg && webpack",
