@@ -1,6 +1,5 @@
-- update README
-- remove test directory and support in Cargo.toml and package.json
-- measure wee-alloc
-- size to fit viewport
+- size to fit viewport and resize when window size changes
+- click to regenerate
+- build warnings
 - publish on site and blog
-- custom seed
+

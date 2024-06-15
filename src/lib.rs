@@ -29,7 +29,6 @@ fn generate_map(width: u32, height: u32, seed: u32) -> Vec<u8> {
     // Avoid shadows on seas by flattening these to sea leel
     let sea_clamped = Clamp::new(&land_base).set_lower_bound(SEA_LEVEL);
 
-    // XXX scaling is wrong as soon as it's not square
     let map = PlaneMapBuilder::new(&sea_clamped)
         .set_size(width, height)
         .set_x_bounds(-out_scale, out_scale)
