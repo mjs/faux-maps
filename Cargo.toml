@@ -1,9 +1,10 @@
-# You must change these to your own details.
 [package]
 name = "faux-maps"
 description = "Browser based map generation in Rust (WASM)"
 version = "0.1.0"
 authors = ["Menno Finlay-Smits <hello@menno.io>"]
+repository = "https://github.com/mjs/faux-maps"
+license = "MIT"
 categories = ["wasm"]
 readme = "README.md"
 edition = "2021"
