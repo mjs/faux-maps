@@ -1,5 +1,4 @@
-- size to fit viewport and resize when window size changes
-- click to regenerate
+- little help hover
 - build warnings
 - publish on site and blog
 
