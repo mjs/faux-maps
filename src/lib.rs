@@ -5,6 +5,7 @@ use web_sys::{CanvasRenderingContext2d, ImageData};
 
 const SEA_LEVEL: f64 = -0.04;
 const PERSISTENCE: f64 = 0.4;
+const SCALING: f64 = 800.0;
 
 #[wasm_bindgen]
 pub fn draw(
@@ -13,15 +14,15 @@ pub fn draw(
     height: u32,
     seed: u32,
 ) -> Result<(), JsValue> {
-    let mut data = generate_map(width, height, seed);
-    let data = ImageData::new_with_u8_clamped_array_and_sh(Clamped(&mut data), width, height)?;
+    let data = generate_map(width, height, seed);
+    let data = ImageData::new_with_u8_clamped_array_and_sh(Clamped(&data), width, height)?;
     ctx.put_image_data(&data, 0.0, 0.0)
 }
 
 fn generate_map(width: u32, height: u32, seed: u32) -> Vec<u8> {
     let width: usize = width.try_into().unwrap();
     let height: usize = height.try_into().unwrap();
-    let out_scale = width as f64 / height as f64;
+    let out_scale = width as f64 / SCALING;
 
     let mut land_base = Fbm::new().set_seed(seed);
     land_base.persistence = PERSISTENCE;
