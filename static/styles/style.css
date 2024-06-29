@@ -7,12 +7,12 @@ body {
   z-index: 2;
   left: 2em;
   top: 2em;
+  width: 0.8em;
   height: 1em;
-  width: 0.7em;
   background-color: #ffffffaa;
   padding: 1em;
   font-family: monospace;
-  font-size: 14pt;
+  font-size: 1.5vmax;
   border-radius: 1em;
   overflow: hidden;
 }
@@ -23,8 +23,7 @@ body {
   list-style-type: square;
 }
 
-#help-icon:hover {
-  height: 8em;
-  width: 25em;
-
+#help-icon:hover, #help-icon:active {
+  width: max-content;
+  height: max-content;
 }
