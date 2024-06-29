@@ -13,10 +13,12 @@ import('../pkg')
         redraw();
 
         window.onresize = redraw;
+        screen.orientation.addEventListener("change", redraw);
         canvas.onclick = () => {
             seed = window.performance.now();
             redraw();
         };
+
     })
     .catch(console.error);
 
