@@ -7,8 +7,6 @@ body {
   z-index: 2;
   left: 2em;
   top: 2em;
-  width: 0.8em;
-  height: 1em;
   background-color: #ffffffaa;
   padding: 1em;
   font-family: monospace;
@@ -23,7 +21,12 @@ body {
   list-style-type: square;
 }
 
-#help-icon:hover, #help-icon:active {
+.help-icon-closed {
+  width: 0.7em;
+  height: 1em;
+}
+
+.help-icon-open {
   width: max-content;
   height: max-content;
 }

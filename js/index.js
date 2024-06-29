@@ -19,3 +19,14 @@ import('../pkg')
         };
     })
     .catch(console.error);
+
+
+const helpIcon = document.getElementById('help-icon');
+
+helpIcon.onclick = () => {
+    if (helpIcon.classList.contains("help-icon-closed")) {
+        helpIcon.classList = ["help-icon-open"];
+    } else {
+        helpIcon.classList = ["help-icon-closed"];
+    }
+};
