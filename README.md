@@ -1,4 +1,4 @@
-# faux-maps
+# Faux Maps
 
 Generates cute, random maps in the browser using WebAssembly. Most of the heavy
 lifting is done by the excellent [Noise](https://crates.io/crates/noise) crate.
