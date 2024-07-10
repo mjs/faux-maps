@@ -1,4 +1,0 @@
-- little help hover
-- build warnings
-- publish on site and blog
-
