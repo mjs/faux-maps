@@ -3,6 +3,8 @@
 Generates cute, random maps in the browser using WebAssembly. Most of the heavy
 lifting is done by the excellent [Noise](https://crates.io/crates/noise) crate.
 
+Live instance: https://menno.io/faux-maps/
+
 ## How to install dependencies
 
 ```sh
